@@ -3,8 +3,6 @@
 @section('content')
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
-
 
 <div class="container">
     <div class="row justify-content-center">
@@ -50,7 +48,7 @@
                 var dataRes = res.data
                 $(dataTable).empty();
                 for(i=0;i<=dataRes.length-1;i++) {
-                    $(dataTable).append("<td>"+dataRes[i].id+
+                    $(dataTable).append("<tr><td>"+dataRes[i].id+
                         "<td>"+dataRes[i].name+
                         "<td>"+dataRes[i].usuario_login
                         );

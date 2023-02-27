@@ -22,8 +22,11 @@
 
                           <div class="form-group row">
                               <label for="email_address" class="col-md-4 col-form-label text-md-right">Usuario</label>
-                              <div class="col-md-6">
-                                  <input type="text" id="email_address" class="form-control" name="usuario_login" required autofocus>
+                              <div class="col-md-6" id="main_users">
+                                  {{-- <input type="text" id="email_address" class="form-control" name="usuario_login" required autofocus> --}}
+                                  <select class="form-control" id="usuario_login" name="usuario_login" required>
+                                    <option value="0">Seleccione el usuario</option>
+                                  </select>
                                   @if ($errors->has('usuario_login'))
                                       <span class="text-danger">{{ $errors->first('usuario_login') }}</span>
                                   @endif
