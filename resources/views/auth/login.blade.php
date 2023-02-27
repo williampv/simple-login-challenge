@@ -8,7 +8,7 @@
               <div class="card">
                   <div class="card-header">Login</div>
                   <div class="card-body">
-  
+
                       <form action="{{ route('login.post') }}" method="POST">
                           @csrf
                             <div class="form-group row">
@@ -52,14 +52,18 @@
                                   </div>
                               </div>
                           </div>
-  
+                          
+                          
                           <div class="col-md-6 offset-md-4">
                               <button type="submit" class="btn btn-primary">
                                   Login
-                              </button>
-                          </div>
-                      </form>
+                                </button>
+                            </div>
+                        </form>
                         
+                        <div class="col-md-6 offset-md-4 text-center text-danger">
+                          @if (session('success')) {{ session('success') }} @endif
+                        </div>
                   </div>
               </div>
           </div>
