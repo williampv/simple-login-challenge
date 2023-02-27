@@ -3,6 +3,9 @@
 <head>
     <title>Laravel - ItSolutionStuff.com</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src={{url('js/main.js')}}></script>
     <style type="text/css">
         @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
   
