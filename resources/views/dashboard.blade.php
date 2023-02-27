@@ -13,7 +13,8 @@
                 <div class="card-body">
                     @if (session('success'))
                         <div class="alert alert-success" role="alert">
-                            {{ session('success') }}
+                            Bienvenido(a)
+                            <h4>{{ auth()->user()->name }}</h4>
                         </div>
                     @endif
   
