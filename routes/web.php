@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Resources\UserResource;
 use App\Models\User;
+use App\Http\Resources\ProfileResource;
+use App\Models\Profile;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +27,8 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/users', function () {
     return new UserResource(User::all());
+});
+
+Route::get('/profiles', function () {
+    return new ProfileResource(Profile::all());
 });

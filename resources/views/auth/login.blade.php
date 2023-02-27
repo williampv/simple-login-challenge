@@ -11,6 +11,15 @@
   
                       <form action="{{ route('login.post') }}" method="POST">
                           @csrf
+                            <div class="form-group row">
+                                <label for="profile" class="col-md-4 col-form-label text-md-right">Perfil</label>
+                                <div class="col-md-6">
+                                    <select class="form-control" id="profile_selector">
+                                        <option value="0">Seleccione el perfil</option>
+                                    </select>
+                                </div>
+                            </div>
+
                           <div class="form-group row">
                               <label for="email_address" class="col-md-4 col-form-label text-md-right">Usuario</label>
                               <div class="col-md-6">
